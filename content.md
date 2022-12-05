@@ -6,7 +6,9 @@ This is indicative that the vast majority of existing applications and services 
 
 ## Intel OneDAL and other optimized libraries
 
-As more and more computational resources are dedicated to ML/AI, Intel has increased its commitment to creating domain-specific libraries that provide this functionality while making best use of Intel's hardware products.  This work started long before the current ML trend, with MKL, the Math Kernel Library, which you can see integrated in many ML libraries in various high-level languages (including, by the way, ML.NET).  With time, this effort has increased, and now the suite of optimized libraries that Intel offers, as well as those libraries from other sources Intel contributes to (like XGBoost, Pytorch, Tensorflow, ONNXRuntime, to mention a few) is vast.
+As more and more computational resources are dedicated to ML/AI, Intel has increased its commitment to creating domain-specific libraries that provide this functionality while making best use of Intel's hardware products.  This work started long before the current ML trend, with MKL, the Math Kernel Library, which you can see integrated in many ML libraries in various high-level languages (including, by the way, ML.NET).  With time, this effort has increased, and now the suite of optimized libraries that Intel offers, as well as those libraries from other sources Intel contributes to (like XGBoost, Pytorch, Tensorflow, ONNXRuntime, to mention a few) is vast.  
+
+Often, these libraries' main focus is the seasoned practitioner of ML, and therefore offer a wide variety of tunable knobs, specialized APIs and other configuration options that make them very flexible and capable to adapt to many circumstances.  This flexibility, however, makes for a steep learning curve for the developer who is more concerned with their application domain than with the intrincacies of a particular ML technique.   Moreover, most of these libraries are written in C/C++, which brings some complexity of its own.   One way to escape this dilemma, and to put all this power where it can be used, is to furnish thes libraries with high-level APIs, preferably in higher-level languages.  A prominent example of this approach is, of course ML.NET.  Another one is `scikit-learn` which has done a lot for the popularization of many ML techniques, and whose own integration with OneDAL has been very successful.
 
 ## Using our integration in ML.NET
 
@@ -16,3 +18,11 @@ As more and more computational resources are dedicated to ML/AI, Intel has incre
 ## What comes next
 
 We're actively looking to continue this work, broadening the surface of the Intel optmized libraries we expose to ML.NET or adding to the set of libraries currently exposed.  Since the possibilities are so vast, we're trying to carefully prioritize our work based on use cases, so as to start with issues people are experiencing right now and postpone technically-feasible-but-who-would-use-it applications.  If you have a suggestion, please feel free to reach us!
+
+## Further resources
+
+* Code samples
+* OneDAL homepage
+* XGBoost homepage
+* ML.NET homepage (and roadmap)
+
